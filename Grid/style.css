@@ -1,0 +1,98 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  height: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+
+  display: grid;
+  gap: 10px;
+}
+
+.container div {
+  padding: 15px;
+  font-size: 32px;
+  font-family: Helvetica;
+  font-weight: bold;
+}
+.logo {
+  grid-area: "logo";
+}
+
+.menu-link {
+  grid-area: "link";
+}
+
+.header {
+  color: white;
+  background-color: #333;
+  grid-column: 1 / 3;
+  display: grid;
+  grid-template-areas: "logo menu";
+}
+.menu {
+  grid-area: "menu";
+}
+.link-container {
+  display: grid;
+  grid-template-areas: "link link link link";
+  list-style: none;
+  font-size: 16px;
+}
+.sidebar {
+  background-color: #941600;
+  grid-row: 2 / 4;
+  display: grid;
+  gap: 30px 100px;
+  color: #222;
+}
+
+.photo {
+  border-radius: 15px;
+}
+.photo,
+.side-content {
+  background-color: aliceblue;
+}
+
+.nav {
+  background-color: #642cde;
+}
+
+.nav-container {
+  display: grid;
+  grid-auto-flow: column;
+  list-style: none;
+}
+
+.article {
+  background-color: #b9c3da;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 100px);
+  gap: 20px;
+
+}
+
+.card {
+  background-color: white;
+}
+.article p {
+  font-size: 18px;
+  font-family: sans-serif;
+  color: #222;
+  text-align: left;
+  }
+
+#title {
+  text-align: center;
+}
+
+.footer {
+  background-color: #393f4d;
+  grid-column: 1 / 3;
+}
